@@ -4,7 +4,7 @@ const Home = ({ addToCart }) => {
   const [menuItems, setMenuItems] = useState([]);
 
   useEffect(() => {
-    fetch('http://localhost:5000/getmenu')
+    fetch('https://foodapp-61lg.onrender.com/getmenu')
       .then((response) => response.json())
       .then((data) => {
         setMenuItems(data);

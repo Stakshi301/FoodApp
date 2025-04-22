@@ -6,7 +6,7 @@ const Dashboard = () => {
   const userId = '12345';  // Replace with the actual user ID (e.g., from the logged-in user)
 
   useEffect(() => {
-    fetch(`http://localhost:5000/user/history?userId=${userId}`)
+    fetch(`https://foodapp-61lg.onrender.com/user/history?userId=${userId}`)
       .then(response => response.json())
       .then(data => {
         if (data.message) {

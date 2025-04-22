@@ -6,7 +6,7 @@ function OrderHistory() {
   const [phone, setPhone] = useState('');
 
   const handleFetchOrders = () => {
-    axios.get(`http://localhost:5000/postorder/${phone}`)
+    axios.get(`https://foodapp-61lg.onrender.com/postorder/${phone}`)
       .then((response) => {
         setOrders(response.data);
       })

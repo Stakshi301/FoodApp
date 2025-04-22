@@ -6,7 +6,7 @@ function Menu() {
 
   useEffect(() => {
     // Fetch menu items from backend API
-    axios.get('http://localhost:5000/getmenu')
+    axios.get('https://foodapp-61lg.onrender.com/getmenu')
       .then((response) => {
         setMenuItems(response.data);
       })
